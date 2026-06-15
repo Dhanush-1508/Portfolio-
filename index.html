@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio — Developer & MCA Student" />
+  <title>Portfolio | Dhanush V</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+  <div class="bg-mesh" aria-hidden="true"></div>
+  <div class="bg-orbs" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+  </div>
+
+  <header class="navbar" id="navbar">
+    <a href="#home" class="nav-brand">
+      <span class="brand-dot"></span>
+      <span>Portfolio</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About Me</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#education" class="nav-link">Education</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <button type="button" class="nav-resume-btn" id="openResume">Resume</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero / About -->
+    <section class="section hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-photo-wrap reveal-left">
+          <div class="photo-glow"></div>
+          <img
+            src=""
+            alt="Profile photo"
+            class="hero-photo"
+          />
+          <div class="photo-ring"></div>
+        </div>
+        <div class="hero-content reveal-right" id="about">
+          <p class="eyebrow">Hello, I'm</p>
+          <h1 class="hero-name">
+            <span class="gradient-text">Dhanush V</span>
+          </h1>
+          <p class="hero-role"> Full Stack Developer </p>
+          <p class="hero-bio">
+            Aspiring Full Stack Developer with knowledge of HTML, CSS, JavaScript, Bootstrap,
+            React.js, Python, and Django. I build responsive, user-friendly web applications
+            with clean and efficient code, and I'm passionate about learning new technologies
+            and improving my full stack development skills.
+          </p>
+          <div class="hero-tags">
+            <span class="tag">React.js</span>
+            <span class="tag">Django</span> 
+            <span class="tag">MySQL</span>
+            <span class="tag">Gemini AI</span>
+          </div>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <button type="button" class="btn btn-outline" id="openResumeHero">Open Resume</button>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-hint" aria-hidden="true">
+        <span>Scroll</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Portfolio</span>
+          <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+          <p class="section-sub">Hover over a card to explore what each project does.</p>
+        </div>
+        <div class="projects-grid projects-grid-three">
+          <article class="project-card reveal">
+            <div class="project-card-inner">
+              <div class="project-front">
+                <div class="project-icon"><i class="fas fa-briefcase"></i></div>
+                <h3>Smart Job Portal</h3>
+                <p class="project-stack">Python · Django · MySQL · Gemini AI</p>
+              </div>
+              <div class="project-back">
+                <h3>Smart Job Portal</h3>
+                <p class="project-stack">Python · Django · MySQL · Gemini AI</p>
+                <p>Job portal with auth, posting, search &amp; applications. Gemini AI for job suggestions &amp; ATS resume scoring. Django + MySQL with email confirmations.</p>
+                <div class="project-links">
+                  <a href="https://github.com/Dhanush-1508" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card-inner">
+              <div class="project-front">
+                <div class="project-icon"><i class="fas fa-graduation-cap"></i></div>
+                <h3>AI Learning Platform</h3>
+                <p class="project-stack">React · Node.js · MongoDB · JWT</p>
+              </div>
+              <div class="project-back">
+                <h3>AI Learning Platform</h3>
+                <p class="project-stack">React · Node.js · MongoDB · JWT</p>
+                <p>Learning platform with PDF upload, AI flashcards &amp; quizzes. Auth, dashboard, progress tracking &amp; profiles. React + Tailwind, Node/Express backend.</p>
+                <div class="project-links">
+                  <a href="https://github.com/Dhanush-1508" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card-inner">
+              <div class="project-front">
+                <div class="project-icon"><i class="fas fa-laptop-code"></i></div>
+                <h3>Website Clone</h3>
+                <p class="project-stack">HTML · CSS · JavaScript · Bootstrap</p>
+              </div>
+              <div class="project-back">
+                <h3>Website Clone</h3>
+                <p>Responsive website replicating a modern UI layout. Used Bootstrap grid for structured, mobile-friendly design. Deployed on GitHub Pages / Netlify.</p>
+                <div class="project-links">
+                  <a href="https://github.com/Dhanush-1508" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Expertise</span>
+          <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <div class="skill-card-header">
+              <i class="fas fa-code"></i>
+              <h3>Frontend</h3>
+            </div>
+            <ul class="skill-list">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>React.js</li>
+              <li>Bootstrap</li>
+            </ul>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-card-header">
+              <i class="fas fa-server"></i>
+              <h3>Backend</h3>
+            </div>
+            <ul class="skill-list">
+              <li>Python</li>
+              <li>Django</li>
+            </ul>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-card-header">
+              <i class="fas fa-database"></i>
+              <h3>Databases</h3>
+            </div>
+            <ul class="skill-list">
+              <li>MySQL</li>
+            </ul>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-card-header">
+              <i class="fas fa-toolbox"></i>
+              <h3>Tools &amp; Platforms</h3>
+            </div>
+            <ul class="skill-list">
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>VS Code</li>
+              <li>Netlify</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Academic</span>
+          <h2 class="section-title"><span class="gradient-text">Education</span></h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">July 2024 – May 2026</span>
+              <h3>Master of Computer Applications (MCA)</h3>
+              <p class="timeline-score">CGPA — 7.8</p>
+              <p class="timeline-school">Vels Institute of Science, Technology and Advanced Studies College, Chennai</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Nov 2021 – April 2024</span>
+              <h3>Bachelor of Commerce (B.Com) — Information System Management</h3>
+              <p class="timeline-score">CGPA — 6.9</p>
+              <p class="timeline-school">Ramakrishna Mission Vivekananda College, Chennai</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">April 2020 – March 2021</span>
+              <h3>Higher Secondary Certificate (HSC)</h3>
+              <p class="timeline-score">74%</p>
+              <p class="timeline-school">Jeeva Velu International School, Thiruvannamalai</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">April 2018 – March 2019</span>
+              <h3>Secondary School Leaving Certificate (SSLC)</h3>
+              <p class="timeline-score">57%</p>
+              <p class="timeline-school">Kendriya Vidyalaya School, Thiruvannamalai</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="certifications reveal">
+          <h3 class="cert-title"><i class="fas fa-award"></i> Certifications</h3>
+          <div class="cert-grid">
+            <div class="cert-card">
+              <span class="cert-badge">Certificate</span>
+              <p>Full Stack Developer (Python) — <strong>SLA Institute</strong></p>
+            </div>
+            <div class="cert-card">
+              <span class="cert-badge">Certificate</span>
+              <p>JavaScript Beginner — <strong>IBM</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Get in touch</span>
+          <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+          <p class="section-sub">Feel free to reach out for collaborations or opportunities.</p>
+        </div>
+        <div class="contact-box reveal">
+          <p class="contact-email">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:dhanushvenkat2003@gmail.com">dhanushvenkat2003@gmail.com</a>
+          </p>
+          <p class="contact-phone">
+            <i class="fas fa-phone"></i>
+            <a href="tel:+919486114659">+91 94*** ***59</a>
+          </p>
+          <p class="contact-location">
+            <i class="fas fa-location-dot"></i>
+            Chennai, India
+          </p>
+          <div class="social-links">
+            <a href="mailto:dhanushvenkat2003@gmail.com" class="social-icon" aria-label="Email" title="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/dhanush-v-93542b3b0/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn" title="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/Dhanush-1508" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+        <footer class="site-footer">
+          <p>&copy; 2026 Dhanush V. Crafted with passion.</p>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <!-- Resume Modal -->
+  <div class="resume-overlay" id="resumeOverlay" aria-hidden="true">
+    <div class="resume-modal" role="dialog" aria-labelledby="resumeTitle" aria-modal="true">
+      <button class="resume-close" id="closeResume" aria-label="Close resume">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="resume-content">
+        <header class="resume-header">
+          <h2 id="resumeTitle">Dhanush V</h2>
+          <p class="resume-subtitle"> Full Stack Developer </p>
+          <div class="resume-contact-row">
+            <span><i class="fas fa-phone"></i> +91 94*** ***59</span>
+            <span><i class="fas fa-envelope"></i> dhanushvenkat2003@gmail.com</span>
+            <span><i class="fas fa-location-dot"></i> Chennai</span>
+          </div>
+          <div class="resume-contact-row">
+            <a href="https://www.linkedin.com/in/dhanush-v-93542b3b0/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+            <a href="https://github.com/Dhanush-1508" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+
+        </header>
+
+        <section class="resume-block">
+          <h3>Summary</h3>
+          <p>Aspiring Full Stack Developer with knowledge of HTML, CSS, JavaScript, Bootstrap, React.js, Python, and Django. Able to build responsive and user-friendly web applications with clean and efficient code. Passionate about enhancing new technologies and improving full stack development skills.</p>
+        </section>
+
+        <section class="resume-block">
+          <h3>Projects</h3>
+          <div class="resume-entry">
+            <strong>Smart Job Portal — Full Stack Web Application</strong>
+            <p class="resume-stack">Python | Django | MySQL | HTML | CSS | Bootstrap | Google Gemini AI</p>
+            <ul>
+              <li>Developed a responsive job portal with user authentication, job posting, job search, and application submission.</li>
+              <li>Integrated Gemini AI for skill-based job suggestions and ATS resume scoring using PDF text extraction.</li>
+              <li>Built the backend with Django and MySQL, and added email confirmation for successful job applications.</li>
+            </ul>
+          </div>
+          <div class="resume-entry">
+            <strong>Website Clone — Responsive Web Application</strong>
+            <p class="resume-stack">HTML | CSS | JavaScript | Bootstrap</p>
+            <ul>
+              <li>Designed and developed a fully responsive website replicating a modern UI layout.</li>
+              <li>Utilized Bootstrap grid system for structured and mobile-friendly design.</li>
+              <li>Deployed the project using GitHub Pages / Netlify.</li>
+            </ul>
+          </div>
+          <div class="resume-entry">
+            <strong>AI-Powered Learning Platform</strong>
+            <p class="resume-stack">React.js | Node.js | Express.js | MongoDB | JWT | Tailwind CSS</p>
+            <ul>
+              <li>Built a full-stack learning platform with PDF upload, AI-generated flashcards, and quizzes.</li>
+              <li>Implemented secure authentication, dashboard, progress tracking, and profile management features.</li>
+              <li>Built frontend with React.js and Tailwind CSS, and backend with Node.js/Express and MongoDB.</li>
+            </ul>
+          </div>
+
+        </section>
+
+        <section class="resume-block">
+          <h3>Technical Skills</h3>
+          <p><strong>Frontend:</strong> HTML5, CSS3, JavaScript, React.js, Bootstrap</p>
+          <p><strong>Backend:</strong> Python, Django</p>
+          <p><strong>Databases:</strong> MySQL</p>
+          <p><strong>Tools &amp; Platforms:</strong> Git, GitHub, VS Code, Netlify</p>
+        </section>
+
+        <section class="resume-block">
+          <h3>Education</h3>
+          <div class="resume-entry">
+            <div class="resume-entry-head">
+              <strong>Master of Computer Applications (MCA) — CGPA 7.8</strong>
+              <span>Jul 2024 – May 2026</span>
+            </div>
+            <p>Vels Institute of Science, Technology and Advanced Studies College, Chennai</p>
+          </div>
+          <div class="resume-entry">
+            <div class="resume-entry-head">
+              <strong>B.Com Information System Management — CGPA 6.9</strong>
+              <span>Nov 2021 – Apr 2024</span>
+            </div>
+            <p>Ramakrishna Mission Vivekananda College, Chennai</p>
+          </div>
+          <div class="resume-entry">
+            <div class="resume-entry-head">
+              <strong>Higher Secondary Certificate (HSC) — 74%</strong>
+              <span>Apr 2020 – Mar 2021</span>
+            </div>
+            <p>Jeeva Velu International School, Thiruvannamalai</p>
+          </div>
+          <div class="resume-entry">
+            <div class="resume-entry-head">
+              <strong>SSLC — 57%</strong>
+              <span>Apr 2018 – Mar 2019</span>
+            </div>
+            <p>Kendriya Vidyalaya School, Thiruvannamalai</p>
+          </div>
+        </section>
+
+        <section class="resume-block">
+          <h3>Certifications</h3>
+          <ul>
+            <li>Full Stack Developer (Python) — SLA Institute</li>
+            <li>JavaScript Beginner — IBM</li>
+          </ul>
+        </section>
+
+
+                  <a href="assets/resume.pdf" class="resume-download-btn" download>
+            <i class="fas fa-file-pdf"></i> Download PDF Resume
+          </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
